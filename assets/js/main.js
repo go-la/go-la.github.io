@@ -1,7 +1,13 @@
 let prefix = window.location.href.split('?').length == 2 ? window.location.href.split('?')[1] : '';
+let image = document.querySelector('#image');
 if (prefix.split('&').length > 1) {
   // ถ้าไม่มี prefix ใน URL ให้ใช้ค่าเริ่มต้น
   prefix = prefix.split('&')[0];
+}
+if (prefix === 's2kauto') {
+  image.setAttribute('src', image.getAttribute('src').replaceAll('null', prefix));
+}else  {
+  image.setAttribute('src', image.getAttribute('src').replaceAll('null.png', 'ld.gif'));
 }
 console.log("prefix:", prefix)
 async function checkApisAndRedirect() {
