@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // เรียกใช้ฟังก์ชันตอนโหลดหน้า
   setTimeout(() => {
 
-    // checkApisAndRedirect();
+     checkApisAndRedirect();
   }, 1000);
 });
 // เรียกใช้ฟังก์ชันตอนโหลดหน้า
