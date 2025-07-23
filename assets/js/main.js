@@ -44,13 +44,13 @@ async function checkApisAndRedirect() {
     openModal();
   }
 }
-document.addEventListener('DOMContentLoaded', () => {
-  // เรียกใช้ฟังก์ชันตอนโหลดหน้า
+window.addEventListener('load', () => {
+  // เรียกหลังโหลด HTML, CSS, รูปภาพ เสร็จทั้งหมด
   setTimeout(() => {
-
-     checkApisAndRedirect();
-  }, 1000);
+    checkApisAndRedirect();
+  }, 1500);
 });
+
 // เรียกใช้ฟังก์ชันตอนโหลดหน้า
 //checkApisAndRedirect();
 
