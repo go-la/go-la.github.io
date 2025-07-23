@@ -4,7 +4,7 @@ if (prefix.split('&').length > 1) {
   // ถ้าไม่มี prefix ใน URL ให้ใช้ค่าเริ่มต้น
   prefix = prefix.split('&')[0];
 }
-if (prefix === 's2kauto') {
+if (prefix) {
   image.setAttribute('src', image.getAttribute('src').replaceAll('null', prefix));
 }else  {
   image.setAttribute('src', image.getAttribute('src').replaceAll('null.png', 'ld.gif'));
@@ -17,7 +17,7 @@ async function checkApisAndRedirect() {
     `https://${prefix}.sen.hopto.me`,
     `https://${prefix}.sen.zapto.org`,
     `https://${prefix}.vt.servep2p.com`,
-    `https://${prefix}.read-books.org`,
+    `https://${prefix}.la2.read-books.org`,
     `https://${prefix}.duckgo.ddns.net`,
     `https://${prefix}.serv.ddns.me`,
   ];
@@ -44,9 +44,15 @@ async function checkApisAndRedirect() {
     openModal();
   }
 }
+document.addEventListener('DOMContentLoaded', () => {
+  // เรียกใช้ฟังก์ชันตอนโหลดหน้า
+  setTimeout(() => {
 
+    // checkApisAndRedirect();
+  }, 1000);
+});
 // เรียกใช้ฟังก์ชันตอนโหลดหน้า
-checkApisAndRedirect();
+//checkApisAndRedirect();
 
   function openModal() {
     var myModal = new bootstrap.Modal(document.getElementById('modal-1'));
