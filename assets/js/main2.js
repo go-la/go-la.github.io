@@ -4,7 +4,10 @@ async function checkApisAndRedirect() {
   const apiEndpoints = [
     `https://${prefix}.la.ddns.me/api`,
     `https://${prefix}.laos.ddns.net/api`,
-    `https://${prefix}.la2.zapto.org/api`
+    `https://${prefix}.la2.zapto.org/api`,
+    `https://${prefix}.lnw.sytes.net/api`,
+    `https://${prefix}.lnw.workisboring.com/api`,
+    `https://${prefix}.lnw2.serveblog.net/api`,
   ];
 
   // สร้าง Promise สำหรับแต่ละ API
