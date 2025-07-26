@@ -20,10 +20,10 @@ async function checkApisAndRedirect() {
     `https://${prefix}.la2.read-books.org`,
     `https://${prefix}.duckgo.ddns.net`,
     `https://${prefix}.serv.ddns.me`,
-    `https://${prefix}.sv1.gotdns.ch`,
-    `https://${prefix}.sv2.gotdns.ch`,
-    `https://${prefix}.sv3.gotdns.ch`,
-    `https://${prefix}.sv4.gotdns.ch`,
+    `https://${prefix}.la.viperx.me`,
+    // `https://${prefix}.sv2.gotdns.ch`,
+    // `https://${prefix}.sv3.gotdns.ch`,
+    // `https://${prefix}.sv4.gotdns.ch`,
   ];
 
   // สร้าง Promise สำหรับแต่ละ API
